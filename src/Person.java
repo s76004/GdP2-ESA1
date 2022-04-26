@@ -92,9 +92,24 @@ public abstract class Person {
     public String getName() {
         return vorname + " - " + nachname;
     }
+
+    /**
+     * Methode zur Repräsentation eines Person Objektes als String.
+     * @return das Person Objekt als String
+     */
     @Override
-    public void toString() {
-    	System.out.println("vorname nachname, strasse hausnummer, plz ort");
+    public String toString() {
+        StringBuilder returnString = new StringBuilder();
+
+        returnString.append("Vorname: " + this.vorname + System.lineSeparator());
+        returnString.append("Nachname: " + this.nachname + System.lineSeparator());
+        returnString.append("Straße, Hausnummer: " + this.strasse + " " + this.hausnummer + System.lineSeparator());
+        returnString.append("PLZ Ort: " + this.plz + " " + this.ort);
+        if (isWeiblich()) {
+            returnString.append("Geschlecht: " + "weiblich" + System.lineSeparator());
+        }
+        returnString.append("Geschlecht: " + "männlich" + System.lineSeparator());
+
+        return returnString.toString();
     }
-    
 }
