@@ -102,7 +102,7 @@ public class Kunde extends Person {
 			returnString.append("Geschlecht: " + "weiblich" + System.lineSeparator());
 		}
 		returnString.append("Geschlecht: " + "männlich" + System.lineSeparator());
-		if (getKundennummer())){
+		if (getKundenNr()){
 			returnString.append("Kundennummer: " + "kundennummer" + System.lineSeparator());
 		}
 		return returnString.toString();
