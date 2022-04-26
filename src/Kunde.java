@@ -86,6 +86,10 @@ public class Kunde extends Person {
 		}
 		return anrede;
 	}
+	
+	/**Methode zur Repräsentation eines Kunde Objektes als String.
+     * @return das Kudne Objekt als String
+	 */
 	@Override
 	public String toString() {
 		StringBuilder returnString = new StringBuilder();
@@ -98,7 +102,7 @@ public class Kunde extends Person {
 			returnString.append("Geschlecht: " + "weiblich" + System.lineSeparator());
 		}
 		returnString.append("Geschlecht: " + "männlich" + System.lineSeparator());
-		if (getKundennummer == false )(){
+		if (getKundennummer())){
 			returnString.append("Kundennummer: " + "kundennummer" + System.lineSeparator());
 		}
 		return returnString.toString();

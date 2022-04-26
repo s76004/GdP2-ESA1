@@ -59,6 +59,9 @@ public class Angestellte extends Person {
 		}
 		return anrede;
 	}
+	/**Methode zur Repräsentation eines Angestellte Objektes als String.
+     * @return das Angestellte Objekt als String
+	 */
 	@Override
 	public String toString() {
 		StringBuilder returnString = new StringBuilder();
@@ -71,7 +74,7 @@ public class Angestellte extends Person {
 			returnString.append("Geschlecht: " + "weiblich" + System.lineSeparator());
 		}
 		returnString.append("Geschlecht: " + "männlich" + System.lineSeparator());
-		if (getGehalt == false )(){
+		if (getGehalt()){
 			returnString.append("Gehalt: " + "gehalt" + System.lineSeparator());
 		}
 		return returnString.toString();
