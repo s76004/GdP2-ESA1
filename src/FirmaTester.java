@@ -1,5 +1,6 @@
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class FirmaTester {
 
@@ -38,6 +39,22 @@ public class FirmaTester {
 
 
 
+	}
+//Beispielcode	
+//  Arrays.sort(far, new IFigur.FlaechenComparator());
+//    Arrays.sort(far, (o1, o2) -> (int) (o1.getFlaeche() - o2.getFlaeche()));
+//    System.out.println(Arrays.toString(far))
+	
+	
+	/**
+	 * 
+	 * @param <T>
+	 * @param <Person> Typ des zu sortierenden Arrays
+	 * @param a Array der Personen die sortiert werdenn sollen
+	 * @param c Vergleichsoperator zum sortieren der Personen
+	 */
+	public static void sort(Person[] a, Comparator<? super T> c) {
+		
 	}
 
 }
