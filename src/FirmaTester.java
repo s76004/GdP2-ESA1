@@ -1,6 +1,7 @@
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.function.Consumer;
 
 public class FirmaTester {
 
@@ -37,8 +38,11 @@ public class FirmaTester {
 		// should be true
 		System.out.println(kmu.istVoll());
 
-
-
+		/**
+		 * Test von Hendrik für Lambda-Funktionen.
+		 */
+		Person[] persons = new Person[10];
+		Arrays.sort(persons, Comparator.comparing(p -> p.ort));
 	}
 //Beispielcode	
 //  Arrays.sort(far, new IFigur.FlaechenComparator());
