@@ -2,3 +2,4 @@
 src/.idea
 *.iml
 .DS_Store
+src/out
