@@ -54,6 +54,7 @@ public class FirmaTester {
     public static List<Person> sort(List<Person> p) {
         return p
                 .stream()
-                .sorted(Comparator.comparing(Person::getPlz).thenComparing(Person::getOrt)).toList();
+                .sorted(Comparator.comparing(Person::getPlz)
+                    .thenComparing(Person::getOrt)).toList();
     }
 }
