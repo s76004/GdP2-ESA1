@@ -54,9 +54,8 @@ public class FirmaTester {
 	 * @return die sortierte Liste
 	 */
 	public static List<Person> sort(List<Person> p) {
-		List<Person> collect = p
+		return p
 				.stream()
 				.sorted(Comparator.comparing(Person::getPlz).thenComparing(Person::getOrt)).toList();
-		return p;
 	}
 }
