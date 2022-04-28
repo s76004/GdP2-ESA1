@@ -1,13 +1,15 @@
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 import java.util.function.Consumer;
 
 public class FirmaTester {
 
 	/**
 	 * Main-Methode.
-	 * 
+	 *
 	 * @param args Uebergabeparameter
 	 */
 	public static void main(String[] args) {
@@ -38,27 +40,23 @@ public class FirmaTester {
 		// should be true
 		System.out.println(kmu.istVoll());
 
-		/**
-		 * Test von Hendrik für Lambda-Funktionen.
-		 */
-		Person[] persons = new Person[10];
-		Arrays.sort(persons, Comparator.comparing(p -> p.ort));
-	}
-//Beispielcode	
-//  Arrays.sort(far, new IFigur.FlaechenComparator());
-//    Arrays.sort(far, (o1, o2) -> (int) (o1.getFlaeche() - o2.getFlaeche()));
-//    System.out.println(Arrays.toString(far))
-	
-	
-	/**
-	 * 
-	 * @param <T>
-	 * @param <Person> Typ des zu sortierenden Arrays
-	 * @param a Array der Personen die sortiert werdenn sollen
-	 * @param c Vergleichsoperator zum sortieren der Personen
-	 */
-	public static void sort(Person[] a, Comparator<? super T> c) {
-		
+		List<Person> persons = new ArrayList<>();
+		persons.add(k2);
+		persons.add(k1);
+		persons.forEach(System.out::println);
+		persons = sort(persons);
+		persons.forEach(System.out::println);
 	}
 
+	/**
+	 * Methode um mit Hilfe von Lambda eine Liste von Person-Objekten zu sortieren.
+	 * @param p die zu sortierende Liste
+	 * @return die sortierte Liste
+	 */
+	public static List<Person> sort(List<Person> p) {
+		List<Person> collect = p
+				.stream()
+				.sorted(Comparator.comparing(Person::getPlz).thenComparing(Person::getOrt)).toList();
+		return p;
+	}
 }

@@ -85,8 +85,23 @@ public abstract class Person {
     }
 
     /**
+     * Getter-Methode um den Ort eines Person Objektes zu erhalten.
+     * @return der Ort des Person Objektes
+     */
+    public String getOrt() {
+        return ort;
+    }
+
+    /**
+     * Getter-Methode um die PLZ eines Person Objektes zu erhalten.
+     * @return die PLZ des Person Objektes
+     */
+    public String getPlz() {
+        return plz;
+    }
+
+    /**
      * Die Methode getName() gibt Vornamen und Nachnamen zurueck.
-     * 
      * @return Vorname gefolgt von " - " gefolgt vom Nachname
      */
     public String getName() {
