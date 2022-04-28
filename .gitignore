@@ -3,5 +3,3 @@ src/.idea
 *.iml
 .DS_Store
 src/out
-JCF-E2/.project
-JCF-E2/.classpath
