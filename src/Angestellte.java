@@ -36,8 +36,7 @@ public class Angestellte extends Person {
 	/**
 	 * Die Methode getGehalt() dient zur Ausgabe der Gehaltskosten. Sie wird von der
 	 * Klasse Firma aufgerufen.
-	 * 
-	 * @param keine
+	 *
 	 * @return float Gehalt des Angestellten
 	 */
 	public float getGehalt() {
@@ -74,7 +73,7 @@ public class Angestellte extends Person {
 			returnString.append("Geschlecht: " + "weiblich" + System.lineSeparator());
 		}
 		returnString.append("Geschlecht: " + "männlich" + System.lineSeparator());
-		if (getGehalt()){
+		if (gehalt > 0){
 			returnString.append("Gehalt: " + "gehalt" + System.lineSeparator());
 		}
 		return returnString.toString();
