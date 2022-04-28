@@ -116,14 +116,14 @@ public abstract class Person {
     public String toString() {
         StringBuilder returnString = new StringBuilder();
 
-        returnString.append("Vorname: " + this.vorname + System.lineSeparator());
-        returnString.append("Nachname: " + this.nachname + System.lineSeparator());
-        returnString.append("Straße, Hausnummer: " + this.strasse + " " + this.hausnummer + System.lineSeparator());
-        returnString.append("PLZ Ort: " + this.plz + " " + this.ort);
+        returnString.append("Vorname: ").append(this.vorname).append(System.lineSeparator())
+                .append("Nachname: ").append(this.nachname).append(System.lineSeparator())
+                .append("Straße, Hausnummer: ").append(this.strasse).append(" ").append(this.hausnummer).append(System.lineSeparator())
+                .append("PLZ Ort: ").append(this.plz).append(" ").append(this.ort);
         if (isWeiblich()) {
-            returnString.append("Geschlecht: " + "weiblich" + System.lineSeparator());
+            returnString.append("Geschlecht: weiblich").append(System.lineSeparator());
         }
-        returnString.append("Geschlecht: " + "männlich" + System.lineSeparator());
+        returnString.append("Geschlecht: männlich").append(System.lineSeparator());
 
         return returnString.toString();
     }
