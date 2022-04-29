@@ -1,3 +1,8 @@
+/**
+ * 
+ * @author Kevin Kurt (s76004@bht-berlin.de), Jan Zimmermann (s79873@bht-berlin.de), Alexander Mavrin (s53615@bht-berlin.de)
+ * @version 1.0.0
+ */
 
 public class Angestellte extends Person {
 

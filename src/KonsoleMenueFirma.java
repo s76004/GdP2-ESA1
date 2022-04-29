@@ -1,4 +1,9 @@
 /**
+ * 
+ * @author Kevin Kurt (s76004@bht-berlin.de), Jan Zimmermann (s79873@bht-berlin.de), Alexander Mavrin (s53615@bht-berlin.de)
+ * @version 1.0.0
+ */
+/**
  * Die Klasse KonsoleMenueFirma stellt die Oberflaeche zur Verwaltung einfacher
  * Firmendaten zur Verfuegung. Es koennen Kunden und Angestellte erfasst werden,
  * Gehaltskosten ausgegeben werden und die Adressen aller Personen ausgegeben
